@@ -1,0 +1,14 @@
+<div class="Date" ng-repeat="user in usersData">
+  <div class="container">
+    <h1> - {{user.squetch_name}}</h1>
+  </div>
+  <div class="container">
+    <h3>{{user.bigining_date | date: 'MMMM'}}</h3>
+  </div>
+  <div class="line">
+    <h2>From: {{user.bigining_date | date:"hh:mm a" }} - to: {{user.ending_date| date:"hh:mm a"}}</h2>
+  </div>
+  <button type="button"  ng-click="deleteItem(user)"></button>
+
+
+</div>

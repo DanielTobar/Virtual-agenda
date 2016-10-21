@@ -1,0 +1,50 @@
+<header>
+  <div class="container-fluid">
+    <div class="col-xs-4 col-md-4">
+        <img src="./img/Logomakr_9dLJQF.png" id="logo" />
+    </div>
+    <div class="col-xs-4 col-md-4">
+          <h1 class="text-center">Wellcome</h1>
+    </div>
+    <div class="col-xs-4 col-md-4">
+        <img src="./img/gear.png" class="config" />
+    </div>
+  </div>
+</header>
+<!-- /////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////// -->
+
+  <!-- /////////////////////////////////////////// -->
+  <!-- /////////////////////////////////////////// -->
+
+
+<div class="box">
+  <div class="list" ng-show="doit">
+    <button class="addApointmentbuton"type="button" ng-hide="addnewDate" ng-click="addnewDate = !addnewDate">
+      <div class="">
+        <span class="glyphicon glyphicon-plus"></span>
+      </div>
+      Add apointment</button>
+    <div class="postContainer">
+      <form class="newDate" ng-show="addnewDate">
+        <button type="button" ng-click="addnewDate = !addnewDate"><span class="glyphicon glyphicon-plus"></span></button>
+        <input type="text" ng-model="obj.owner" placeholder="owner">
+        <input type="text" ng-model="obj.squetch_name" placeholder="event name">
+        <input type="date" ng-model="obj.date" placeholder="day">
+        <input type="time" ng-model="obj.bigining_date" placeholder="begin">
+        <input type="time" ng-model="obj.ending_date" placeholder="end">
+        <input ng-click="sendData(obj, user.creator)" type="submit">
+      </form>
+    </div>
+  <apointment users-data="users"></apointment>
+  </div>
+
+
+    <div class="listArrow" ng-click="doit= !doit">
+    </div>
+    <div  class="calendar"ng-show="on">
+    </div>
+    <div class="calendarArrow" ng-click="on=!on">
+    </div>
+
+</div>

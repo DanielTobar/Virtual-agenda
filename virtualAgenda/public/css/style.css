@@ -1,0 +1,176 @@
+#vineta{
+  height: 70px;
+  width: 100px;
+  display: flex;
+  padding-left: -10px;
+}
+#squetch{
+  background-color: purple
+}
+.newDate{
+  background-color:rgb(124, 128, 130);
+  height: 80px;
+  width:50vw;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px;
+}
+#logo{
+  height:60px ;
+  /*width: 260px;*/
+  float: left;
+  margin-top: 5px;
+}
+#name h1{
+  text-align: center;
+  font-family: serif;
+  color: white;
+}
+.config{
+  float:right;
+height: 60px;
+width: 60px;
+margin-top:6px;
+
+}
+.config:hover{
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+
+.listArrow{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  height: 80px;
+  width: 240px;
+  background-color: black;
+  margin-left: 25%;
+  border-radius:5px;
+}
+.list{
+  width: 90vw;
+  min-height: 500px;
+  background-color: rgb(152, 168, 170);
+  border-radius:5px;
+  margin-left: 5vw;
+}
+.calendarArrow{
+  border-radius:5px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  height: 80px;
+  width: 240px;
+  background-color: black;
+  margin-left: 25%;
+}
+.calendar{
+  border-radius:5px;
+  width: 90vw;
+  height: 500px;
+  background-color: rgb(152, 168, 170);
+  margin-left: 5vw;
+}
+.box{
+  margin-top: 10px;
+  width: 100vw;
+}
+.newDate{
+  position:absolute;
+}
+.addApointmentbuton{
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+}
+/*////////////////////////cell phone///////////////////////////////////*/
+@media (min-width: 768px){
+  .listArrow{
+    float: left;
+    margin-left: 0;
+    margin-top: 40px;
+    height: 416px;
+    width: 30px;
+    background-color: black;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+  }
+  .listArrow:hover{
+    opacity: 0.5;}
+  .list{
+      margin-left: 0;
+    width: 45vw;
+    height: 500px;
+    background-color: rgb(152, 168, 170);
+    float: left;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    padding-left: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .calendarArrow{
+    margin-left: 0;
+    margin-top: 40px;
+    height: 416px;
+    width: 30px;
+    background-color: black;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    float: right;
+
+  }
+  .calendarArrow:hover{
+    opacity: 0.5;
+  }
+  .calendar{
+    margin-left: 0;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    width: 45vw;
+    height: 500px;
+    background-color: rgb(152, 168, 170);
+    float: right;
+    pointer-events: none;
+    transition: transform 300ms ease-in-out;
+  }
+  .box{
+    margin-top: 10px;
+    position: fixed;
+    width: 100vw;
+  }
+}
+.formbox{
+  display:inline-block;
+  height: 100%;
+  width: auto;
+}
+.addApointmentbuton{
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.line{
+  display: inline-flex;
+  flex-flow: row;
+}
